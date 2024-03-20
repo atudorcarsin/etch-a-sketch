@@ -5,13 +5,10 @@ let gridSize = 16;
 function createGrid() {
     for (let i = 0; i < gridSize; i++) {
         let row = document.createElement("div");
-        row.style.display = "flex";
-        row.style.margin = "0px";
-        row.style.padding = "0px";
+        row.className = "row";
         for (let j = 0; j < gridSize; j++) {
             let square = document.createElement("div");
-            square.style.aspectRatio = "1 / 1";
-            square.style.flex = "1 1 20px";
+            square.className = "square";
             row.appendChild(square);
             square.addEventListener("mouseover", (e) => {
                 square.style.backgroundColor = "black";

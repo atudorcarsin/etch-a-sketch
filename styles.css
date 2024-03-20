@@ -16,3 +16,13 @@ h1 {
     text-align: center;
     margin: 20px;
 }
+
+.row {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+.square {
+    aspect-ratio: 1 / 1;
+    flex: 1 1 20px;
+}
