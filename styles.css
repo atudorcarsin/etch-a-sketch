@@ -25,4 +25,6 @@ h1 {
 .square {
     aspect-ratio: 1 / 1;
     flex: 1 1 20px;
+    opacity: 0.0;
+    background-color: black;
 }

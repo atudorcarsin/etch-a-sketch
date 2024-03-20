@@ -11,7 +11,11 @@ function createGrid() {
             square.className = "square";
             row.appendChild(square);
             square.addEventListener("mouseover", (e) => {
-                square.style.backgroundColor = "black";
+                let opacity = e.target.style.opacity;
+                if (isNaN(parseFloat(opacity))) {
+                    opacity = "0";
+                }
+                e.target.style.opacity = (0.1 + parseFloat(opacity)).toString();
             });
         }
         container.appendChild(row);
